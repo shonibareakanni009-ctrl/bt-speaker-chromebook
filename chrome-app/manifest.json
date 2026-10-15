@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "BT Speaker",
+  "version": "1.1.0",
+  "description": "Speaker app with local playback, microphone meter, Wi-Fi audio and screen mirror from your phone. Chrome 75 / XE303C12.",
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    "audioCapture",
+    "system.network",
+    "storage",
+    {"fileSystem": ["retainEntries", "write"]},
+    {"sockets": {
+      "tcpServer": [":8080", ":8081"],
+      "tcp": ["*"]
+    }}
+  ],
+  "icons": {}
+}
