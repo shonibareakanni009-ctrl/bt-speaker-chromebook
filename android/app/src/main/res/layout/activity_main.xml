@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1115"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BT Speaker Share"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Mirror this phone's screen to the Chromebook over Wi-Fi. Optional app audio (Android 10+)."
+            android:textColor="#A1A1AA"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Chromebook address"
+            android:textColor="#A1A1AA"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/hostInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#18181B"
+            android:hint="http://192.168.x.x:8080"
+            android:inputType="textUri"
+            android:padding="14dp"
+            android:textColor="#E8EAED"
+            android:textColorHint="#71717A"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/audioCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:checked="true"
+            android:text="Include app audio (Android 10+)"
+            android:textColor="#E8EAED" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Quality (lower = smoother on old Chromebook)"
+            android:textColor="#A1A1AA"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/qualitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="#18181B"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2563EB"
+            android:text="Start sharing"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3F3F46"
+            android:enabled="false"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:textColor="#E8EAED" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1) Open BT Speaker on Chromebook \u2192 Power On \u2192 Start Wi-Fi receiver\n2) Enter the link shown there\n3) Start sharing and allow screen capture"
+            android:textColor="#93C5FD"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
