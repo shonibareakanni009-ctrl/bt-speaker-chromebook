@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BT Speaker Share</string>
+    <string name="notif_title">Sharing to Chromebook</string>
+    <string name="notif_text">Screen (and audio if enabled) is streaming</string>
+</resources>
